@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.info {
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+    height: 100vh;
+    color: white;
+    padding-top: 25vh;
+    padding-left: 15vw;
+}
+.info__bg {
+    position: absolute;
+    background: #444 url(../images/mountains.jpg);
+    background-size: cover;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: saturate(80%) brightness(70%);
+}
+.info__title {
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    padding-bottom: 1.5vw;
+    padding-right: 4vw;
+    border-bottom: 0.4vw solid #fff;
+    text-shadow: var(--shadow);
+}

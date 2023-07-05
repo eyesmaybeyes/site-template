@@ -1,0 +1,81 @@
+.section-two {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+}
+.section-two__line {
+    position: absolute;
+    top: 0%;
+    height: 60%;
+    right: 31%;
+    width: 2px;
+    background-color: #fff;
+    transform: rotate(-51deg);
+}
+.section-two > div {
+    position: relative;
+    left: -50%;
+    width: 1200px;
+    background-color: #333;
+    z-index: 1;
+}
+.section-two > div:nth-child(2) {
+    display: grid;
+    align-items: center;
+    padding: 0 280px;
+    left: -100%;
+    background-color: #fff;
+    clip-path: polygon(65% 0%, 100% 50%, 65% 100%, 0% 100%, 40% 50%, 0% 0%);
+    width: 1200px;
+    z-index: 2;
+}
+.section-two > div:nth-child(3) {
+    left: -160%;
+    background: url(../images/sunset.jpg) 100% 50% / cover;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+}
+.list__title {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #333;
+}
+.list__title span:last-child {
+    display: block;
+    margin-left: 30px;
+}
+.list {
+    margin-left: 130px;
+}
+.list:first-child {
+    margin-top: 35px;
+}
+.list *:not(.list) {
+    margin-bottom: 70px;
+}
+.list__item {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 1px;
+    max-width: 250px;
+    padding-left: 40px;
+    color: #111;
+}
+.list__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    left: 25px;
+    top: -20px;
+    height: 60px;
+    background-color: #999;
+}
+@media (max-width: 1120px) {
+    .section-two > div:nth-child(3) {
+        width: 100vw;
+        left: -120%;
+    }
+}

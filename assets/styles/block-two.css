@@ -26,7 +26,7 @@
     padding: 0 280px;
     left: -100%;
     background-color: #fff;
-    clip-path: polygon(65% 0%, 100% 50%, 65% 100%, 0% 100%, 40% 50%, 0% 0%);
+    clip-path: polygon(65% 0%, 100% 50%, 65% 100%, -3% 100%, 40% 50%, 0% 0%);
     width: 1200px;
     z-index: 2;
 }
@@ -73,9 +73,8 @@
     height: 60px;
     background-color: #999;
 }
-@media (max-width: 1120px) {
-    .section-two > div:nth-child(3) {
-        width: 100vw;
-        left: -120%;
+@media (max-width: 1200px) {
+    .section-two {
+        display: none;
     }
 }

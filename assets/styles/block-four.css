@@ -1,0 +1,116 @@
+.section-four {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    height: 100vh;
+}
+.section-four__left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.section-four__left > div:first-child {
+    justify-self: end;
+    text-align: right;
+}
+.four-right__title *,
+.four-right__label * {
+    display: block;
+}
+.section-four__right {
+    display: grid;
+    grid-auto-rows: 1fr;
+    align-content: space-around;
+    justify-items: end;
+    text-align: right;
+    padding: 50px 60px;
+    text-transform: uppercase;
+}
+.four-right__title {
+    letter-spacing: 10px;
+    color: #333;
+}
+.four-right__label {
+    margin: 0 0 60px;
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: #666;
+}
+.four-right__desc {
+    display: inline-block;
+    max-width: 200px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+.four-right__line {
+    width: 3px;
+    background-color: #666;
+}
+.four-left__square {
+    --deg: 45deg;
+    --size: 23vw;
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    transform: rotate(var(--deg));
+    top: -6vw;
+    margin-bottom: 7vw;
+    margin-top: 15vw;
+    background-color: #000;
+    box-shadow: 0 4vw 8vw rgba(0, 0, 0, 0.3);
+}
+.square__bg {
+    height: 150%;
+    width: 150%;
+    background-image: url("/assets/images/plyazh-zakat-more.jpg");
+    background-position: center;
+    background-size: cover;
+    transform: rotate(calc(var(--deg) * -1));
+}
+.square__bg-wrap {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+.square__bg_beach {
+    background-image: url("/assets/images/look.jpg");
+}
+.four-left__text {
+    font-size: 14px;
+    max-width: 200px;
+}
+.four-left__text:last-child {
+    margin-left: auto;
+}
+.four-left__text:first-child {
+    border-left: 3px solid #777;
+    padding-left: 20px;
+}
+.four-left__square::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    bottom: 10%;
+    width: 3px;
+    background-color: #444;
+}
+.four-left__square:last-child:before {
+    left: initial;
+    right: -10%;
+}
+.four-left__square:last-child {
+    top: 0;
+    margin-bottom: 0;
+}
+.section-four__left > div:first-child .four-left__text {
+    border-right: 3px solid #777;
+    padding-right: 20px;
+}
+@media (max-width: 1200px) {
+    .section-four {
+        display: none;
+    }
+}

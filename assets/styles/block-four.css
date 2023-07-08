@@ -62,7 +62,7 @@
 .square__bg {
     height: 150%;
     width: 150%;
-    background-image: url("../images/plyazh-zakat-more.jpg");
+    background-image: url(../images/plyazh-zakat-more.jpg);
     background-position: center;
     background-size: cover;
     transform: rotate(calc(var(--deg) * -1));
@@ -75,7 +75,7 @@
     overflow: hidden;
 }
 .square__bg_beach {
-    background-image: url("../images/look.jpg");
+    background-image: url(../images/look.jpg);
 }
 .four-left__text {
     font-size: 14px;
